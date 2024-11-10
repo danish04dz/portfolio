@@ -12,10 +12,9 @@
     ],
     "build": {
       "env": {
-        "NODE_ENV": "production",
-        "VITE_API_URL": "your-api-url-here"  
-      },
-      "outputDirectory": "dist" 
+        "NODE_ENV": "production"
+       
+      }
     },
     "routes": [
       {

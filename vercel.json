@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "vite.config.js",
+        "use": "@vercel/static-build"
+      }
+    ],
+    "build": {
+      "env": {
+        "NODE_ENV": "production",
+        "VITE_API_URL": "your-api-url-here"  
+      },
+      "outputDirectory": "dist" 
+    },
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"  
+      }
+    ]
+  }
+  
